@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main(void){
 	int num;
 	printf("Moi ban chon chuong trinh\n");
@@ -13,6 +12,7 @@ int main(void){
 	
 	switch(num){
 		case 1:
+			{
 			float a,b,sum,sub,sub2; 
 			printf("Tinh tong va hieu 2 so\n");
 			printf("Vui long nhap so thu nhat: ");
@@ -27,8 +27,11 @@ int main(void){
 			printf("Hieu so a - b = %.0f\n",sub);
 			printf("Hieu so b - a = %.0f\n",sub2);
 			break;
+			}
+			
 			
 		case 2:
+			{
 			float h,w,s,c;
 			printf("Tinh chu vi dien tich hinh chu nhat\n");
 			printf("Nhap chieu dai: ");
@@ -40,8 +43,12 @@ int main(void){
 			printf("Chu vi hinh chu nhat la: %.2f\n",c);
 			printf("Dien tich hinh chu nhat la: %.2f",s);
 			break;
+			}
+			
 		case 3:
+			{
 			float r,s1,c1; 
+			float pi = 3.14;
 			printf("Tinh chu vi dien tich hinh tron\n");
 			printf("Nhap kich thuoc ban kinh: ");
 			scanf("%f",&r);
@@ -50,8 +57,11 @@ int main(void){
 			printf("Chu vi hinh tron la: %.2f\n",c1);
 			printf("Dien tich hinh tron la: %.2f",s1);
 			break;
+			}
+			
 			
 		case 4: 
+		{
 			float Math, English, History,x;
 			char Name[30];
 			printf("Type the information:\n");
@@ -73,7 +83,14 @@ int main(void){
 			printf("English: %.2f \n",English);
 			printf("History: %.2f \n",History);
 			printf("Diem trung binh mon la %.2f \n", x);
-					
+			break;
+		}
+			
+		default :
+			{
+				printf("Moi ban chon chuong trinh");
+			}
+			
 	}
 	
 	
