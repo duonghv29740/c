@@ -99,6 +99,7 @@ void tinhTienDien(){
 int main(){
 	while(true){
 	int func;
+	printf("------------------------")
 	printf("\nChuong trinh lab 3\n");
 	printf("1. Chuong trinh tinh hoc luc\n");
 	printf("2. Chuong trinh giai phuong trinh\n");
@@ -119,7 +120,6 @@ int main(){
 			printf("2. Phuong trinh bac 2\n");
 			printf("3. Thoat chuong trinh ");
 			scanf("%d", &func2);
-			while(dem == 0){
 				switch(func2){
 					case 1:{
 						pTB1();
@@ -138,7 +138,6 @@ int main(){
 						break;
 					}
 				}
-			}
 			break;	
 		}
 		case 3:{
